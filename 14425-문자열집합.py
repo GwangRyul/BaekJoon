@@ -38,3 +38,23 @@
 # icerink
 # 예제 출력 1
 # 4
+
+N, M = map(int, input().split())
+arr = dict()
+cnt = 0
+for _ in range(N):
+    s = input().rstrip()
+    arr[s] = 1
+
+for i in range(M):
+    t = input().rstrip()
+    if t in arr:
+        cnt = cnt + 1
+
+print(cnt)
+
+
+
+
+
+
